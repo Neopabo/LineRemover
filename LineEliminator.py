@@ -1,7 +1,7 @@
 #Line Eliminator
 
 #Opens Text File
-File=open('FILE.txt')
+File=open('FILE.txt') #Original Text File
 MyText=File.read()
 MyText.close()
 MyText=MyText.splitlines()
@@ -13,6 +13,6 @@ for i in MyText:
 
 MyTextNew2='\n'.join(MyTextNew)
 
-FileNew=open('FILE.txt', 'w')
+FileNew=open('FILE.txt', 'w') #New Text File
 FileNew.write(MyTextNew2)
 FileNew.close()
