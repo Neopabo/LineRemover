@@ -1,9 +1,8 @@
 #Line Eliminator
 
-#Opens Text File
 File=open('FILE.txt') #Original Text File
 MyText=File.read()
-MyText.close()
+File.close()
 MyText=MyText.splitlines()
 MyTextNew=[]
 
